@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/select.css">
+    <link rel="stylesheet" href="css/tarjetas.css">
+    <link rel="stylesheet" href="css/buscador.css">
+    <link rel="shortcut icon" href="./assets/pokebola.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/cb7441ae4b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="menu">
+        <img class="logo" src="./assets/pokemonGo.png" alt="imagen de pokemongo">
+        <ul class="menu_items">
+            <li>
+                <a href="#">wherever</a>
+            </li>
+            <li>
+                <a href="#">Hora de Aparición</a>
+            </li>
+            <li>
+                <a href="#">Candy's</a>
+            </li>
+        </ul>
+        <span class="btn_menu">
+        <i class="fas fa-bars"></i>
+        </span>
+    </nav>
+
+    <div class="card" id="container">
+
+    </div>
+    <script src="./main.js" type="module"></script>
+</body>
+
 </html>
