@@ -1,42 +1,56 @@
-  //import {  } from './data.js';
+   //import { pokego } from './data/pokemon/pokemon.json';
+
+   //En esta parte encontraremos el botón de subir
+
+
+   window.onscroll = function() {
+       if (document.documentElement.scrollTop > 550) {
+           document.querySelector('.botonup-container').classList.add('mostrar')
+       } else {
+           document.querySelector('.botonup-container').classList.remove('mostrar')
+       }
+   }
+
+   document.querySelector('.botonup-container').addEventListener('click', () => {
+       window.scrollTo({
+           top: 0,
+           behavior: 'smooth'
+       })
+   })
 
 
 
 
-  //Esta parte encontraremos el dom del menu responsive
-  const btn_menu = document.querySelector('.btn_menu')
-  if (btn_menu) {
-      btn_menu.addEventListener("click", () => {
-          const menu_items = document.querySelector('.menu_items')
-          menu_items.classList.toggle('show')
-      })
-  }
+
+   //Esta parte encontraremos el dom del menu responsive
+   const btn_menu = document.querySelector('.btn_menu')
+   if (btn_menu) {
+       btn_menu.addEventListener("click", () => {
+           const menu_items = document.querySelector('.menu_items')
+           menu_items.classList.toggle('show')
+       })
+   }
+
+   //Aqui va el ordernar y filtrar la data
 
 
-  //En esta parte encontraremos el fetch
+
+   document.getElementById("selectByType").addEventListener("change", () => {
+       document.getElementById("pokego_container").innerHTML = " "
+   });
 
 
-  // Obtenemos los datos de todos los pokemon 
-  fetch('./data/pokemon/pokemon.json')
-      .then(response => response.json())
-      .then(json => {
-          pintarPokemon(json.pokemon);
-      });
 
-  // Pinta todos los pokemos insertando un HTML dentro del #container
-  function pintarPokemon(data) {
-      //for (let i = 0; i < data.pokemon.length; i++);
-      const container = document.getElementById('container')
-      let tarjetas_pokemones = "";
-      data.forEach(pokemon => {
-          tarjetas_pokemones += `
-    
-    <div class="card">
-    <span class="morado"># ${pokemon.num}</span>
-    <img src=" ${pokemon.img} "/>
-    <p>${pokemon.num}</p>
-    <h2>${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</h2>
-    </div> `;
-      });
-      container.innerHTML = tarjetas_pokemones
-  }
+
+   //Aqui Ordenaremos la data
+
+
+
+
+
+
+
+   //En esta parte encontraremos el fetch
+
+
+   fetch()

@@ -7,11 +7,24 @@
 }
 
 body {
-    background: rgb(255, 255, 255);
+    background: #EFEFBB;
+    background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);
+    background: linear-gradient(to right, #D4D3DD, #EFEFBB);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato';
+    margin: 0;
+}
+
+i .fas {
+    width: 50px;
+    height: 40px;
 }
 
 .menu {
-    background-color: #213f8f;
+    background-color: #3c5ae6;
     height: 95px;
     width: 100%;
     display: flex;
@@ -47,7 +60,7 @@ body {
 }
 
 .menu_items li:hover {
-    background-color: rgb(252, 22, 22);
+    background-color: #ee1515;
     transition: .4s;
 }
 
@@ -103,7 +116,7 @@ ul.show {
         font-weight: bold;
     }
     .menu_items li a:hover {
-        color: rgb(241, 0, 0);
+        color: #ee1515;
     }
     .logo {
         width: 130px;

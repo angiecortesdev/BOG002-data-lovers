@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="css/select.css">
     <link rel="stylesheet" href="css/tarjetas.css">
     <link rel="stylesheet" href="css/buscador.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/boton.css">
     <link rel="shortcut icon" href="./assets/pokebola.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/cb7441ae4b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <nav class="menu">
-        <img class="logo" src="./assets/pokemonGo.png" alt="imagen de pokemongo">
+        <img id="logo" class="logo" src="./assets/pokemonGo.png" alt="imagen de pokemongo">
         <ul class="menu_items">
             <li>
                 <a href="#">wherever</a>
@@ -31,10 +33,60 @@
         </span>
     </nav>
 
-    <div class="card" id="container">
+    <section class="banner">
+        <img class="banner" src="./assets/banner.jpg" alt="">
+
+    </section>
+
+
+    <div class="seletbox">
+        <div class="filtrar">
+            <select name="" id="selectByType">
+                <option value="">Tipos de Pokemón</option>
+                <option value="Grass">Planta</option>
+                <option value= "Poison">Veneno</option>
+                <option value="Fire">Fuego</option>
+                <option value= "Water">Agua</option>
+                <option value= "Normal">Normal</option>
+                <option value="Ground">Tierra</option>
+                <option value= "Fighting">Lucha</option>
+                <option value= "Rock">Roca</option>
+                <option value="Ice">Hielo</option>
+                <option value= "Flying">Volador</option>
+                <option value= "Bug">Bicho</option>
+                <option value="Electric">Eléctrico</option>
+                <option value= "Fairy">Hada</option>
+                <option value= "Psychic">Psíquico</option>
+                <option value="Ghost">Fantasma</option>
+                <option value= "Dragon">Dragón</option>
+            </select>
+
+            <div class="ordenar">
+                <select name="" id="ordenarPor">
+                    <option value="orde"><i class="fas fa-chevron-up"></i>Ordenar Por</option>
+                    <option value="a-z">A-Z</option>
+                    <option value="z-a">Z-A</option>
+                    <option value="numeros">Números</option>
+                </select>
+            </div>
+        </div>
 
     </div>
+
+
+
+
+    <div id="pokego_container" class="pokego-container"></div>
+
+
+    <div class="botonup-container">
+        <div class="botonup">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </div>
     <script src="./main.js" type="module"></script>
+    <script src="./data/pokemon/pokemon.json"></script>
+
 </body>
 
 </html>
