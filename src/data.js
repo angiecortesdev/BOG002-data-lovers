@@ -13,7 +13,7 @@
 
 
 
- export const pokego = {
+ window.poke2 = {
      filterData: (data, condition) => {
          let tiposDePokemon;
          if (typeof(condition) === "string") {

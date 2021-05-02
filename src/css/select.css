@@ -15,6 +15,7 @@ Aquí Inicia Nuestro Select .seletbox {
 .filtrar {
     margin-left: 5px;
     width: 200px;
+    display: flex;
 }
 
 select>option {
@@ -28,14 +29,14 @@ select:hover {
 }
 
 #selectByType {
-    margin-left: 5px;
+    margin-left: -15px;
     width: 200px;
     height: 35px;
     outline: none;
 }
 
 #ordenarPor {
-    margin-left: 5px;
+    margin-left: 55px;
     width: 200px;
     height: 35px;
     outline: none;
