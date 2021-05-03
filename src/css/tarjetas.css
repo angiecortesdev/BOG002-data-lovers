@@ -97,3 +97,9 @@
     letter-spacing: 1px;
     font-size: 28px;
 }
+
+@media screen and (max-width: 360px) {
+    .tipo {
+        font-size: 15px;
+    }
+}

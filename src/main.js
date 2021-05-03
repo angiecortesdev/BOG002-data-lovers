@@ -88,7 +88,7 @@
         <div class="info">
             <span class="number">#${pokemon.id.toString().padStart(3, '0')}</span>
             <h3 class="name">${pokemon.name}</h3>
-            <small class="type">Type: <span>${type}</span></small>
+            <small class="type">Type: <span class="tipo">${type}</span></small>
             <span><button>Ver Ficha</button></span>
         </div>
     `;
