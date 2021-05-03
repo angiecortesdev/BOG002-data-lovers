@@ -16,12 +16,11 @@
 </head>
 
 <body>
+
+    <!----------------------------------MENU---------------------------------------------------------->
     <nav class="menu">
-        <a href=""> <img id="logo" class="logo" src="./assets/pokemonGo.png" alt="imagen de pokemongo"></a>
+        <a href="index.html"> <img id="logo" class="logo" src="./assets/pokemonGo.png" alt="imagen de pokemongo"></a>
         <ul class="menu_items">
-            <li>
-                <a href="#">wherever</a>
-            </li>
             <li>
                 <a href="#">Hora de Aparición</a>
             </li>
@@ -33,13 +32,17 @@
         <i class="fas fa-bars"></i>
         </span>
     </nav>
+    <!--------------------------------------- BANNER------------------------------ -->
+    <div class="main-image">
+        <div class="container">
+            <!--Donde esta el pokemon go-->
+            <h1><span>Pokemongo</span></h1>
+            <span class="cen">¿Como Ser Un Maestro Pokemon?</span>
+            <a class="button" href="#">Click Me</a>
+        </div>
+    </div>
 
-    <section class="banner">
-        <img class="banner" src="./assets/banner.jpg" alt="">
-
-    </section>
-
-
+    <!-------------------------------------------- SELECTORES------------------------------------------->
     <div class="seletbox">
         <div class="filtrar">
             <select name="" id="selectByType">
@@ -75,22 +78,21 @@
     </div>
 
 
-
+    <!-- ---------------------------CONTENEDOR PRINCIPAL---------------------------------------------- -->
 
     <div id="pokego_container" class="pokego-container"></div>
 
-
+    <!------------------------------------BOTON UP--------------------------------------->
     <div class="botonup-container">
         <div class="botonup">
             <i class="fas fa-chevron-up"></i>
         </div>
     </div>
 
-
+    <!---------------------------------------------FOOTER------------------------------------------------->
     <footer>
         <div class="footer-content">
             <h6>Realizado Por Angie Cortés</h6>
-            <p>Todos Los Derrechos Reservados</p>
             <ul class="socials">
                 <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -99,10 +101,10 @@
             </ul>
         </div>
         <div class="footer-bottom">
-            <p>Copyright &copy; 2021 Todos Los Derrechos Reservados</p>
+            <p>Copyright &copy; 2021 Todos Los Derechos Reservados</p>
         </div>
     </footer>
-
+    <!-- ---------------------------JS MODULE------------------------------------------------------- -->
     <script src="./main.js" type="module"></script>
     <!-- <script src="./data/pokemon/pokemon.js"></script>s -->
 </body>
